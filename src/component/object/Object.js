@@ -17,6 +17,7 @@ function ObjectDetection() {
   };
 
   const renderPredictions = predictions => {
+    if (!canvasRef.current) return
     const ctx = canvasRef.current.getContext("2d");
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     // Font options.

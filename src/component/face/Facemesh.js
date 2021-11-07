@@ -38,6 +38,7 @@ function FaceMesh() {
       const face = await model.estimateFaces({input:video});
 
       // Get canvas context
+      if (!canvasRef.current) return
       const ctx = canvasRef.current.getContext("2d");
       requestAnimationFrame(()=>{drawMesh(face, ctx)});
     }

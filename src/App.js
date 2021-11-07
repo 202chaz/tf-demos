@@ -3,6 +3,7 @@ import FaceMesh from './component/face/Facemesh';
 import Hand from './component/hand/Hand';
 import Pose from './component/pose/Pose';
 import ObjectDetection from './component/object/Object';
+import Holistic from './component/holistic/Holistic';
 import {
   BrowserRouter as Router,
   Routes,
