@@ -2,6 +2,7 @@ import './App.css';
 import FaceMesh from './component/face/Facemesh';
 import Hand from './component/hand/Hand';
 import Pose from './component/pose/Pose';
+import ObjectDetection from './component/object/Object';
 import {
   BrowserRouter as Router,
   Routes,
@@ -32,6 +33,9 @@ function App() {
               <li className="nav-item">
                 <Link to="pose" className="nav-link">Pose</Link>
               </li>
+              <li className="nav-item">
+                <Link to="object" className="nav-link">Object Detection</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -47,6 +51,9 @@ function App() {
             <li>
               <Link to="pose">Pose</Link>
             </li>
+            <li>
+              <Link to="object">Object Detection</Link>
+            </li>
           </ul>
         </nav>
 
@@ -56,6 +63,7 @@ function App() {
           <Route path="/" element={<FaceMesh />}></Route>
           <Route path="/hand" element={<Hand />}></Route>
           <Route path="/pose" element={<Pose />}></Route>
+          <Route path="/object" element={<ObjectDetection />}></Route>
         </Routes>
       </div>
     </Router>
